@@ -1,7 +1,6 @@
 import React from "react";
 
 function App() {
-  return <div>ㅅㅂ 스타트 왜 않됨 </div>;
+  return <div>리엑트 개꿀따리</div>;
 }
-
 export default App;
