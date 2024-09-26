@@ -18,7 +18,6 @@ export default Button;
 type propsTypes = {
   active: "hard" | "smooth" | "circle";
   backgroundColor: "primary" | "hover" | "deactive";
-  text: string;
 };
 
 const Button = (props: propsTypes) => {
@@ -35,7 +34,13 @@ const Button = (props: propsTypes) => {
   const ButtonStyle: CSSProperties = {
     borderRadius: active[props.active],
     backgroundColor: backgroundColor[props.backgroundColor],
+    color: "white",
+    padding: "10px 45px",
+    fontSize: "32px",
+    border: "1px",
+    width: "300px",
+    height: "100px",
   };
-  return <button style={ButtonStyle}>{props.text}</button>;
+  return <button style={ButtonStyle}>버튼</button>;
 };
 export default Button;

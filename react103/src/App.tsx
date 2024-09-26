@@ -1,12 +1,9 @@
-import Button from "./Button";
+import GridLayout from "./GridLayout";
 
 function App() {
   return (
     <div>
-      <Button backgroundColor="primary" active="hard" text="button" />
-      <Button backgroundColor="primary" active="smooth" text="button" />
-      <Button backgroundColor="primary" active="circle" text="button" />
-      <Button backgroundColor="primary" active="hard" text="button" />
+      <GridLayout repeatNumber={4} />
     </div>
   );
 }
