@@ -1,18 +1,7 @@
-import Box from "./Box";
+import React from "react";
 
 function App() {
-  return (
-    <div>
-      <Box backgroungColor="red" width="100px" height="100px" text="red" />
-      <Box backgroungColor="blue" width="100px" height="100px" text="blue" />
-      <Box backgroungColor="green" width="100px" height="100px" text="green" />
-      <Box
-        backgroungColor="orange"
-        width="100px"
-        height="100px"
-        text="orange"
-      />
-    </div>
-  );
+  return <div>ㅅㅂ 스타트 왜 않됨 </div>;
 }
+
 export default App;
