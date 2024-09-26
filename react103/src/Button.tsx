@@ -4,11 +4,11 @@ type propsType = {
   padding: string;
   text: string;
 };
-const Button = (props: propsType) => {
+const Button = ({ backgroundColor, padding, text }: propsType) => {
   const ButtonStyle: CSSProperties = {
-    backgroundColor: props.backgroundColor,
-    padding: props.padding,
+    backgroundColor,
+    padding,
   };
-  return <div style={ButtonStyle}>{props.text}</div>;
+  return <button style={ButtonStyle}>{text}</button>;
 };
 export default Button;
