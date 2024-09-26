@@ -3,9 +3,10 @@ import Button from "./Button";
 function App() {
   return (
     <div>
-      <Button backgroundColor="red" padding="20px" text="빨강" />
-      <Button backgroundColor="blue" padding="10px" text="파랑" />
-      <Button backgroundColor="green" padding="30px" text="초록" />
+      <Button backgroundColor="primary" active="hard" text="button" />
+      <Button backgroundColor="primary" active="smooth" text="button" />
+      <Button backgroundColor="primary" active="circle" text="button" />
+      <Button backgroundColor="primary" active="hard" text="button" />
     </div>
   );
 }
