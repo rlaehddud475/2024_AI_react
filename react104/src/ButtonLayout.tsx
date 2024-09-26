@@ -1,19 +1,17 @@
 import { CSSProperties } from "react";
 import Button from "./Button";
-type GridLayoutProps = {
+type propsType = {
   repeatNumber: number;
 };
-const GridLayout = (props: GridLayoutProps) => {
-  const gridStyle: CSSProperties = {
+
+const ButtonLayout = (props: propsType) => {
+  const ButtonLayOutstyle: CSSProperties = {
     display: "grid",
     gridTemplateColumns: `repeat(${props.repeatNumber},1fr)`,
     gap: "30px",
   };
-  const arr = ["primary", "hover", "Deactive"];
-  const arr1 = ["hard", "hover", "Deactive"];
   return (
-    <section style={gridStyle}>
-      {}
+    <section style={ButtonLayOutstyle}>
       <Button backgroundColor="primary" active="hard" />
       <Button backgroundColor="primary" active="smooth" />
       <Button backgroundColor="primary" active="circle" />
@@ -26,4 +24,5 @@ const GridLayout = (props: GridLayoutProps) => {
     </section>
   );
 };
-export default GridLayout;
+
+export default ButtonLayout;

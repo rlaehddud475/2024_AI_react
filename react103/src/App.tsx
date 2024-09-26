@@ -1,9 +1,9 @@
-import GridLayout from "./GridLayout";
+import GridLayoutCircle from "./GridLayoutCircle";
 
 function App() {
   return (
     <div>
-      <GridLayout repeatNumber={4} />
+      <GridLayoutCircle />
     </div>
   );
 }
