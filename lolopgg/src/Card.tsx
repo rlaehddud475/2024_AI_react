@@ -42,6 +42,7 @@ const Card = (props: CardProps) => {
     display: "flex",
     gap: "10px",
     alignContent: "center",
+    marginRight: "10px",
   };
   return (
     <article style={cardStyle}>
